@@ -1,0 +1,26 @@
+{
+  "networkId": "33111",
+  "deployedBy": "0xB887E7Ed294FBC84aEEb9351082309Dc24f514AD",
+  "manualInstance": {
+    "tim3cap": "0xB37cA925382711F54582DAdaecc94e0e14B7180e",
+    "activity": "0x9763738aC60a8D16953D151D453C12bF210fdeb0",
+    "reward": "0xAe0886e2e004a1e2851A1C2F8db49B098FF56EE9",
+    "distributionMode": "manual"
+  },
+  "automaticInstance": {
+    "tim3cap": "0x5BB34c566eAadE265f0f838E5742D5360787865B",
+    "activity": "0x28E16011540F5B0C637Aa288a14eA6E6e70ffFf8",
+    "reward": "0xE03183373757622549064795Fab0C1Cffb067593",
+    "distributionMode": "automatic"
+  },
+  "brokerWallet": {
+    "address": "0x84cB4fe74c9A29023Fb3c9C2Fd2831DAF96Eff6A",
+    "privateKey": "0xff6d2f3e6ad0051e125ebf357b709cbf08fab6cf3a9371f8f71f28195b81c712"
+  },
+  "eligibleUsers": [
+    "0xB887E7Ed294FBC84aEEb9351082309Dc24f514AD",
+    "0x8674CEd17bAC369605560F8f742429A1a949Ef18",
+    "0x911eB476B6A2D7436c0FC8d1cFA770494aD8041d"
+  ],
+  "timestamp": "2025-04-09T14:40:26.710Z"
+}

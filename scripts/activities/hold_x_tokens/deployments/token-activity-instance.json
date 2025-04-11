@@ -1,0 +1,14 @@
+{
+  "networkId": "33111",
+  "tokenActivityInstance": {
+    "tim3cap": "0xada755Eea400c7Ea41f262AA2F286E6CDA06736b",
+    "activity": "0x689678Ae2BD83BC9065B597576bfB79208eF1bba",
+    "reward": "0xb8e222343e7CCAD6baF815b7ea78D0b7dCB058f6",
+    "activityType": "HOLD_X_TOKENS"
+  },
+  "brokerWallet": {
+    "address": "0x7fb7A418E6Bd1271FDb670193351F12C174E6C3e",
+    "privateKey": "0xf92ef43b10b254522a2473b27de25ad6f4179d27911dfbe911dffb4df88bc1b3"
+  },
+  "timestamp": "2025-04-11T02:40:46.730Z"
+}

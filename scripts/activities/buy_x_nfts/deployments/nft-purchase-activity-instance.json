@@ -1,0 +1,14 @@
+{
+  "networkId": "33111",
+  "nftActivityInstance": {
+    "tim3cap": "0x5a321184e16363E8b3c2878a03a0DED9C0aa3913",
+    "activity": "0x4760e846F89D7a12Bae2d65d2A0B4A0AFfE44905",
+    "reward": "0x5eBf581A1b0913E32526303A1203bf7EF55F64a7",
+    "activityType": "BUY_X_NFTS"
+  },
+  "brokerWallet": {
+    "address": "0xfaC267968cCD80673f336909695b4e5D7ddDABa0",
+    "privateKey": "0x66f2bc21bb874407fda1243f962d889746a477e5df075a44049c784f8be27655"
+  },
+  "timestamp": "2025-04-11T03:41:29.998Z"
+}

@@ -1,0 +1,26 @@
+{
+  "networkId": "33111",
+  "deployedBy": "0xB887E7Ed294FBC84aEEb9351082309Dc24f514AD",
+  "manualInstance": {
+    "tim3cap": "0xc391288b04040C21808c83fb2595882a962EEE2f",
+    "activity": "0x723cf0b0443947F209AB1529C5CfD8FB5AAA0BAA",
+    "reward": "0x5001B743568d67F97203c961D09C165Fdc7F7b95",
+    "distributionMode": "manual"
+  },
+  "automaticInstance": {
+    "tim3cap": "0x46cF52a9a5b15D8c6052940Adc989578AE56c05f",
+    "activity": "0x27a5F0Bd921bA91A21D1FE0E06a39C335fdD91f4",
+    "reward": "0xb8cb750954b82ccFF9C2911eb93F2F283d3F5d47",
+    "distributionMode": "automatic"
+  },
+  "brokerWallet": {
+    "address": "0x5d9D2b4aD14a229912543523E218Db7BE5C8863C",
+    "privateKey": "0x5bb71d9867731abbe24efa4140dcab63febd1346c057d1c73ef937e0b009373a"
+  },
+  "winners": [
+    "0xB887E7Ed294FBC84aEEb9351082309Dc24f514AD",
+    "0xb112f0803B1342c8Bdf9bc1c058cA087985a6b66",
+    "0x236f0921005Ae602e9B80e235e1c0834914b6ee2"
+  ],
+  "timestamp": "2025-04-09T06:48:48.693Z"
+}

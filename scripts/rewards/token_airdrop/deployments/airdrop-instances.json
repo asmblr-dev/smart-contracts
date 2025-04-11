@@ -1,0 +1,26 @@
+{
+  "networkId": "33111",
+  "deployedBy": "0xB887E7Ed294FBC84aEEb9351082309Dc24f514AD",
+  "manualInstance": {
+    "tim3cap": "0xF212DE0Aa2842B6f8704A7d9e299D8170b20035C",
+    "activity": "0x1fFCe45E6B4AC156C110e6eB46129a6300Ea99bE",
+    "reward": "0x8F2368A7201d9485522d61aF72033464aB406440",
+    "distributionMode": "manual"
+  },
+  "automaticInstance": {
+    "tim3cap": "0x6ef602D53CF9540e7C6CEE6D30E396081963d98F",
+    "activity": "0x45FE0BA380b0cCA935f82C119e37cEebF80EF832",
+    "reward": "0xf2F71a2191044Ddc7c84979E2a5454022ffa5BbB",
+    "distributionMode": "automatic"
+  },
+  "brokerWallet": {
+    "address": "0x67053b26eb044965676f9aA845388702Ef5bE00F",
+    "privateKey": "0x3f983df6c14a3892c3c7c11596c285d2b2eccb200fb1a650efb30d83c873a41b"
+  },
+  "eligibleUsers": [
+    "0xB887E7Ed294FBC84aEEb9351082309Dc24f514AD",
+    "0xE1631eF54777524f16c6DeFA0481eDbF48621B4a",
+    "0x118de2247F16c401BF33BC6aA8AA7aFE0DFEc831"
+  ],
+  "timestamp": "2025-04-09T11:11:31.661Z"
+}

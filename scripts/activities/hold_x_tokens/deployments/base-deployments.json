@@ -1,0 +1,14 @@
+{
+  "networkId": "33111",
+  "deployer": "0xB887E7Ed294FBC84aEEb9351082309Dc24f514AD",
+  "contracts": {
+    "tim3capImpl": "0x3f8A6Baed78782DA3BF886F14b48f46056832196",
+    "holdXTokensImpl": "0xcC558c03a9A62018eba3b6a7EF4E1C05837B5ee9",
+    "tokenAirdropRewardImpl": "0x0235b0261ad2E71bA85065e0B45051b50D56eE6D",
+    "registry": "0x20E52bd281CCA1a09184c244B7B397A90DAdF009",
+    "factory": "0x215726Cab73d64374A52E26ce93d32CCB520DF52",
+    "activityToken": "0xBa913A28aAB869c230640d1bD001225179a44143",
+    "rewardToken": "0xA669Cf227c0be1bF68C144699490B95098446E7E"
+  },
+  "timestamp": "2025-04-11T02:35:05.907Z"
+}

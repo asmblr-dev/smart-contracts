@@ -1,0 +1,455 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_tim3capImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_registry",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_deployerWallet",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_feeRecipient",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_feePercentage",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "feeRecipient",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "feePercentage",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "isEnabled",
+        "type": "bool"
+      }
+    ],
+    "name": "AffiliateFeeConfigUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "newDeployer",
+        "type": "address"
+      }
+    ],
+    "name": "DeployerWalletUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "bytes32",
+        "name": "newRoot",
+        "type": "bytes32"
+      }
+    ],
+    "name": "DiscountMerkleRootUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "origin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "bool",
+        "name": "authorized",
+        "type": "bool"
+      }
+    ],
+    "name": "OriginAuthorizationUpdated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "contractAddress",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "activityType",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "rewardType",
+        "type": "string"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "enabled",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "signingKey",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "proofValidityDuration",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "requireProofForAllClaims",
+            "type": "bool"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct Tim3cap.EligibilityConfig",
+        "name": "eligibilityConfig",
+        "type": "tuple"
+      }
+    ],
+    "name": "Tim3capDeployed",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "affiliateFeeConfig",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "feeRecipient",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "feePercentage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "isEnabled",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "authorizedOrigins",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "activityType",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "activityImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "activityConfig",
+        "type": "bytes"
+      },
+      {
+        "internalType": "string",
+        "name": "rewardType",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "rewardImplementation",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "rewardConfig",
+        "type": "bytes"
+      },
+      {
+        "components": [
+          {
+            "internalType": "bool",
+            "name": "enabled",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "signingKey",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "proofValidityDuration",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "requireProofForAllClaims",
+            "type": "bool"
+          }
+        ],
+        "internalType": "struct Tim3cap.EligibilityConfig",
+        "name": "eligibilityConfig",
+        "type": "tuple"
+      },
+      {
+        "internalType": "address",
+        "name": "origin",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "affiliate",
+        "type": "address"
+      }
+    ],
+    "name": "createTim3cap",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "deployerWallet",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "discountMerkleRoot",
+    "outputs": [
+      {
+        "internalType": "bytes32",
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "registry",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_feeRecipient",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_feePercentage",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "_isEnabled",
+        "type": "bool"
+      }
+    ],
+    "name": "setAffiliateFeeConfig",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newDeployer",
+        "type": "address"
+      }
+    ],
+    "name": "setDeployerWallet",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "tim3capImplementation",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "origin",
+        "type": "address"
+      },
+      {
+        "internalType": "bool",
+        "name": "authorized",
+        "type": "bool"
+      }
+    ],
+    "name": "updateAuthorizedOrigin",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "newRoot",
+        "type": "bytes32"
+      }
+    ],
+    "name": "updateDiscountMerkleRoot",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

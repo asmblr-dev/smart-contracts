@@ -1,0 +1,1941 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "E:\\code\\debug_contracts\\contracts\\BaseActivity.sol": {
+      "lastModificationDate": 1743989262063,
+      "contentHash": "1cf580771f494815f0f87a263d2cb091",
+      "sourceName": "contracts/BaseActivity.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
+        "hardhat/console.sol",
+        "./interfaces/IActivity.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "BaseActivity"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\interfaces\\IActivity.sol": {
+      "lastModificationDate": 1743986733300,
+      "contentHash": "01945d6751a186284d67373696f58335",
+      "sourceName": "contracts/interfaces/IActivity.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IActivity"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\hardhat\\console.sol": {
+      "lastModificationDate": 1743989690689,
+      "contentHash": "681c532e816169606d13a5fe8b475074",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
+      "lastModificationDate": 1743989690482,
+      "contentHash": "5a20b2cad87ddb61c7a3a6af21289e28",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\utils\\cryptography\\ECDSA.sol": {
+      "lastModificationDate": 1743989690270,
+      "contentHash": "d822a8a9468649cab463f29f5decf5cc",
+      "sourceName": "@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Strings.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ECDSA"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
+      "lastModificationDate": 1743989690166,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\utils\\Strings.sol": {
+      "lastModificationDate": 1743989690507,
+      "contentHash": "48686fc32a22a3754b8e63321857dd2a",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./math/Math.sol",
+        "./math/SignedMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\utils\\math\\Math.sol": {
+      "lastModificationDate": 1743989690477,
+      "contentHash": "fe63409d8a06818b926cf89e0ea88b1b",
+      "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\utils\\math\\SignedMath.sol": {
+      "lastModificationDate": 1743989690502,
+      "contentHash": "9488ebd4daacfee8ad04811600d7d061",
+      "sourceName": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SignedMath"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721.sol": {
+      "lastModificationDate": 1743989690441,
+      "contentHash": "48de4c9a3a4ae5ef66a2aa620843413f",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\IERC165.sol": {
+      "lastModificationDate": 1743989690414,
+      "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\extensions\\IERC721Metadata.sol": {
+      "lastModificationDate": 1743989690446,
+      "contentHash": "efbc0d15b80a74e34dbe8da0f3e879bb",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\ERC721.sol": {
+      "lastModificationDate": 1743989690346,
+      "contentHash": "95602b04f0b53f1139f4668d123ddeb7",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol",
+        "./IERC721Receiver.sol",
+        "./extensions/IERC721Metadata.sol",
+        "../../utils/Address.sol",
+        "../../utils/Context.sol",
+        "../../utils/Strings.sol",
+        "../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\utils\\introspection\\ERC165.sol": {
+      "lastModificationDate": 1743989690307,
+      "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\utils\\Address.sol": {
+      "lastModificationDate": 1743989690129,
+      "contentHash": "211ffd288c1588ba8c10eae668ca3c66",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.1"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\IERC721Receiver.sol": {
+      "lastModificationDate": 1743989690449,
+      "contentHash": "c22d4395e33763de693fd440c6fd10e1",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\interfaces\\IERC2981.sol": {
+      "lastModificationDate": 1743989690429,
+      "contentHash": "23ed9f4f05068d7fc726138726c34bee",
+      "sourceName": "@openzeppelin/contracts/interfaces/IERC2981.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC2981"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\token\\common\\ERC2981.sol": {
+      "lastModificationDate": 1743989690342,
+      "contentHash": "8dbffefc9f90bf604f3b8575e708dc03",
+      "sourceName": "@openzeppelin/contracts/token/common/ERC2981.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../interfaces/IERC2981.sol",
+        "../../utils/introspection/ERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC2981"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\BaseReward.sol": {
+      "lastModificationDate": 1743989774161,
+      "contentHash": "f706c02000003254a9538c18e0146da2",
+      "sourceName": "contracts/BaseReward.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+        "hardhat/console.sol",
+        "./interfaces/IReward.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "BaseReward"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\extensions\\ERC721Enumerable.sol": {
+      "lastModificationDate": 1743989690350,
+      "contentHash": "212e86880d210b6cac8c3eb0cd6b1fad",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ERC721.sol",
+        "./IERC721Enumerable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC721Enumerable"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\interfaces\\IReward.sol": {
+      "lastModificationDate": 1743986733300,
+      "contentHash": "5344288804c4c8fd3d831bb638764840",
+      "sourceName": "contracts/interfaces/IReward.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IReward"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\security\\ReentrancyGuard.sol": {
+      "lastModificationDate": 1743989690492,
+      "contentHash": "1535f8c0c68463f8c1b5239f7584e71f",
+      "sourceName": "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\token\\ERC721\\extensions\\IERC721Enumerable.sol": {
+      "lastModificationDate": 1743989690444,
+      "contentHash": "f4dd06783f321aa26179bc2b6e361c29",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC721Enumerable"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\Tim3cap.sol": {
+      "lastModificationDate": 1743989795365,
+      "contentHash": "3ad4473def075cc39ee370ecf386429f",
+      "sourceName": "contracts/Tim3cap.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/security/Pausable.sol",
+        "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol",
+        "hardhat/console.sol",
+        "./interfaces/IActivity.sol",
+        "./interfaces/IReward.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Tim3cap"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\security\\Pausable.sol": {
+      "lastModificationDate": 1743989690486,
+      "contentHash": "25c8108f36fdd472bc78d4c4af240c11",
+      "sourceName": "@openzeppelin/contracts/security/Pausable.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Pausable"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\utils\\cryptography\\MerkleProof.sol": {
+      "lastModificationDate": 1743989690478,
+      "contentHash": "1ccd3348ad628f1330ce36eb6a30618d",
+      "sourceName": "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MerkleProof"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\Tim3capInitializer.sol": {
+      "lastModificationDate": 1743162814349,
+      "contentHash": "b3cdc6a7b941586da289c89f199c62b8",
+      "sourceName": "contracts/Tim3capInitializer.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Tim3cap.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Tim3capInitializer"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\Tim3capFactory.sol": {
+      "lastModificationDate": 1743989299495,
+      "contentHash": "4bd27e18b166ca9e7aa51d4549e83379",
+      "sourceName": "contracts/Tim3capFactory.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/proxy/Clones.sol",
+        "./Tim3cap.sol",
+        "./interfaces/IActivity.sol",
+        "./interfaces/IReward.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Tim3capFactory"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\proxy\\Clones.sol": {
+      "lastModificationDate": 1743989690160,
+      "contentHash": "89c075565795af5e3e88fc75642a4af8",
+      "sourceName": "@openzeppelin/contracts/proxy/Clones.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Clones"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\Tim3capRegistery.sol": {
+      "lastModificationDate": 1743163988159,
+      "contentHash": "13bba53d39dddf11afb8b95d1d6a29f6",
+      "sourceName": "contracts/Tim3capRegistery.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Tim3capRegistry"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\rewards\\NFTMintReward.sol": {
+      "lastModificationDate": 1744108233578,
+      "contentHash": "a2dc7c2318c3b6c85c53f93b60e91995",
+      "sourceName": "contracts/rewards/NFTMintReward.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+        "@openzeppelin/contracts/token/common/ERC2981.sol",
+        "hardhat/console.sol",
+        "../BaseReward.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "NFTMintReward"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\rewards\\NFTRaffleReward.sol": {
+      "lastModificationDate": 1744108233686,
+      "contentHash": "fca75ce88cca700f6d04f1df92ab9d12",
+      "sourceName": "contracts/rewards/NFTRaffleReward.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+        "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
+        "hardhat/console.sol",
+        "../BaseReward.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "NFTRaffleReward"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\rewards\\WLSpotReward.sol": {
+      "lastModificationDate": 1744108234019,
+      "contentHash": "6bad8864c790e968549e444d99bc740b",
+      "sourceName": "contracts/rewards/WLSpotReward.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol",
+        "../BaseReward.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MerkleWhitelistReward"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\rewards\\TokenRaffleReward.sol": {
+      "lastModificationDate": 1744108675919,
+      "contentHash": "de2413cedd27e47423fbfba6d54ffc6f",
+      "sourceName": "contracts/rewards/TokenRaffleReward.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "../BaseReward.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "TokenRaffleReward"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\IERC20.sol": {
+      "lastModificationDate": 1743989690423,
+      "contentHash": "df36f7051335cd1e748b1b6463b7fdd3",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\utils\\SafeERC20.sol": {
+      "lastModificationDate": 1743989690497,
+      "contentHash": "1b5d667d3740d866eca0352758e59827",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol",
+        "../extensions/IERC20Permit.sol",
+        "../../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Permit.sol": {
+      "lastModificationDate": 1743989690426,
+      "contentHash": "aa849939a4ae83a4dcb2dca9b3e9e707",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Permit.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Permit"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\rewards\\TokenAirdropReward.sol": {
+      "lastModificationDate": 1744108233852,
+      "contentHash": "133a73e2fe4d4deaa0d6bed3476dcda2",
+      "sourceName": "contracts/rewards/TokenAirdropReward.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "hardhat/console.sol",
+        "../BaseReward.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "TokenAirdropReward"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\ERC20.sol": {
+      "lastModificationDate": 1743989690320,
+      "contentHash": "3ae5166c6827a9cf1a7a462d1632b464",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "E:\\code\\debug_contracts\\node_modules\\@openzeppelin\\contracts\\token\\ERC20\\extensions\\IERC20Metadata.sol": {
+      "lastModificationDate": 1743989690425,
+      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\test\\TestToken.sol": {
+      "lastModificationDate": 1744180772758,
+      "contentHash": "218db5e0da67e453f3cd7d69cc3384b1",
+      "sourceName": "contracts/test/TestToken.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "TestToken"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\test\\TestNFT.sol": {
+      "lastModificationDate": 1744180758075,
+      "contentHash": "636c82cd3002f193cb81ab3a9ed5ba2a",
+      "sourceName": "contracts/test/TestNFT.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "TestNFT"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\rewards\\NFTAirdropReward.sol": {
+      "lastModificationDate": 1744207936090,
+      "contentHash": "a3a0b3ae908f90fb54623ea9aecb6d8a",
+      "sourceName": "contracts/rewards/NFTAirdropReward.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+        "@openzeppelin/contracts/token/ERC721/extensions/IERC721Enumerable.sol",
+        "hardhat/console.sol",
+        "../BaseReward.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "NFTAirdropReward"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\rewards\\WhitelistRaffleReward.sol": {
+      "lastModificationDate": 1744260071334,
+      "contentHash": "d8b7c03e06323d7c6d78d969f8588897",
+      "sourceName": "contracts/rewards/WhitelistRaffleReward.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+        "../BaseReward.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "WhitelistRaffleReward"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\activities\\BuyXNFTsActivity.sol": {
+      "lastModificationDate": 1744342272444,
+      "contentHash": "1b6514c26f452f0d38a9e63083f16a22",
+      "sourceName": "contracts/activities/BuyXNFTsActivity.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "../BaseActivity.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "BuyXNFTs"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\rewards\\WhitelistSpotsReward.sol": {
+      "lastModificationDate": 1744342495800,
+      "contentHash": "e1d620cfc339d7dc9eb624d893ccdfd5",
+      "sourceName": "contracts/rewards/WhitelistSpotsReward.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/security/ReentrancyGuard.sol",
+        "../BaseReward.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "WhitelistSpots"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\activities\\HoldXTokensActivity.sol": {
+      "lastModificationDate": 1744342234938,
+      "contentHash": "c65a5a59d8fcc15e8eeb08dbd1cb9ab0",
+      "sourceName": "contracts/activities/HoldXTokensActivity.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "hardhat/console.sol",
+        "../BaseActivity.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "HoldXTokens"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\activities\\HoldXNftsActivity.sol": {
+      "lastModificationDate": 1744342220349,
+      "contentHash": "268bbf5844b149e24360d9f3bd9b34f9",
+      "sourceName": "contracts/activities/HoldXNftsActivity.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+        "hardhat/console.sol",
+        "../BaseActivity.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "HoldXNfts"
+      ]
+    },
+    "E:\\code\\debug_contracts\\contracts\\activities\\BuyXTokensActivity.sol": {
+      "lastModificationDate": 1744343206640,
+      "contentHash": "7eb0fd2e99760d1a111e9087a53f0693",
+      "sourceName": "contracts/activities/BuyXTokensActivity.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "viaIR": true,
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "../BaseActivity.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "BuyXTokens"
+      ]
+    }
+  }
+}

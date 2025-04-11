@@ -1,0 +1,22 @@
+{
+  "networkId": "33111",
+  "deployedBy": "0xB887E7Ed294FBC84aEEb9351082309Dc24f514AD",
+  "manualInstance": {
+    "tim3cap": "0x1edfc916057373b47A0bC05062088Fc5012dD350",
+    "activity": "0x190E859c077FC551Df2B04A2C693f44c587584f3",
+    "reward": "0x852bFB331056DfF6132950a93F9eC778FAD17Dbb",
+    "distributionMode": "manual"
+  },
+  "automaticInstance": {
+    "tim3cap": "0x6189D455544eb0574771D7917c3bcd1f705E0953",
+    "activity": "0x3345709f1aBF5bFADB463F01Ba7482cB99545909",
+    "reward": "0x2d579a5aFf9959C9Ff6ae1ad99CFeD34DB5A7bE1",
+    "distributionMode": "automatic"
+  },
+  "winners": [
+    "0xB887E7Ed294FBC84aEEb9351082309Dc24f514AD",
+    "0xc0B14Da8823e3683e4Cf92F6Ff604aEE06E54E31",
+    "0xA419e4DD797a023E4A7449eaA20313211DAfeaa9"
+  ],
+  "timestamp": "2025-04-10T05:52:50.497Z"
+}

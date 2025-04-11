@@ -1,0 +1,14 @@
+{
+  "networkId": "33111",
+  "deployer": "0xB887E7Ed294FBC84aEEb9351082309Dc24f514AD",
+  "contracts": {
+    "tim3capImpl": "0x0b2cfbA791a1C0512cA2fCB057622C1993708EDe",
+    "buyXNftsImpl": "0xE8d8b711D2cC69b86B1C1Fa6E3e00f16Aae27464",
+    "tokenAirdropRewardImpl": "0x11819b33b1624A11c962395e5556c89e5A44cDd9",
+    "registry": "0x2892B3F10D5b3732bF0935C01ce71b03a61662C6",
+    "factory": "0x0C0B9Ccfa65363341FcE7025c8B343D3E0691Fe6",
+    "testNFT": "0x6FC56eF924d8ac7024f1545078c264903469E92A",
+    "rewardToken": "0x72302029666f1291c3f9718A4459D1cab805c29D"
+  },
+  "timestamp": "2025-04-11T03:41:09.429Z"
+}
