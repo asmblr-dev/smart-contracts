@@ -463,11 +463,24 @@ export interface HoldXTokens$Type {
 
 declare module "@nomicfoundation/hardhat-viem/types" {
   export function deployContract(
+    contractName: "HoldXTokens",
+    constructorArgs?: [],
+    config?: DeployContractConfig
+  ): Promise<GetContractReturnType<HoldXTokens$Type["abi"]>>;
+  export function deployContract(
     contractName: "contracts/activities/HoldXTokensActivity.sol:HoldXTokens",
     constructorArgs?: [],
     config?: DeployContractConfig
   ): Promise<GetContractReturnType<HoldXTokens$Type["abi"]>>;
 
+  export function sendDeploymentTransaction(
+    contractName: "HoldXTokens",
+    constructorArgs?: [],
+    config?: SendDeploymentTransactionConfig
+  ): Promise<{
+    contract: GetContractReturnType<HoldXTokens$Type["abi"]>;
+    deploymentTransaction: GetTransactionReturnType;
+  }>;
   export function sendDeploymentTransaction(
     contractName: "contracts/activities/HoldXTokensActivity.sol:HoldXTokens",
     constructorArgs?: [],
@@ -477,6 +490,11 @@ declare module "@nomicfoundation/hardhat-viem/types" {
     deploymentTransaction: GetTransactionReturnType;
   }>;
 
+  export function getContractAt(
+    contractName: "HoldXTokens",
+    address: Address,
+    config?: GetContractAtConfig
+  ): Promise<GetContractReturnType<HoldXTokens$Type["abi"]>>;
   export function getContractAt(
     contractName: "contracts/activities/HoldXTokensActivity.sol:HoldXTokens",
     address: Address,

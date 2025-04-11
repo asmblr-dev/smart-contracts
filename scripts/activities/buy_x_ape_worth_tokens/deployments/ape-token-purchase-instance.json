@@ -1,0 +1,14 @@
+{
+  "networkId": "33111",
+  "apePurchaseInstance": {
+    "tim3cap": "0xc9c180003ef813689857A5CB824906FE603AC071",
+    "activity": "0x7436230435029F6A2932B51D2FaFB5554ac0C26A",
+    "reward": "0x252fbf47aDA6189D4F0a08e51EC213CCf947b8E0",
+    "activityType": "BUY_X_APECOIN_WORTH_OF_TOKENS"
+  },
+  "brokerWallet": {
+    "address": "0x59Dd316c53c3430293A7D125059922AA669ec6a8",
+    "privateKey": "0x414856504f75185fefbebfbcce88da1747c07c7e7ab6ee90dcf8ab38c76f3437"
+  },
+  "timestamp": "2025-04-11T07:26:59.274Z"
+}

@@ -518,11 +518,24 @@ export interface HoldXNfts$Type {
 
 declare module "@nomicfoundation/hardhat-viem/types" {
   export function deployContract(
+    contractName: "HoldXNfts",
+    constructorArgs?: [],
+    config?: DeployContractConfig
+  ): Promise<GetContractReturnType<HoldXNfts$Type["abi"]>>;
+  export function deployContract(
     contractName: "contracts/activities/HoldXNftsActivity.sol:HoldXNfts",
     constructorArgs?: [],
     config?: DeployContractConfig
   ): Promise<GetContractReturnType<HoldXNfts$Type["abi"]>>;
 
+  export function sendDeploymentTransaction(
+    contractName: "HoldXNfts",
+    constructorArgs?: [],
+    config?: SendDeploymentTransactionConfig
+  ): Promise<{
+    contract: GetContractReturnType<HoldXNfts$Type["abi"]>;
+    deploymentTransaction: GetTransactionReturnType;
+  }>;
   export function sendDeploymentTransaction(
     contractName: "contracts/activities/HoldXNftsActivity.sol:HoldXNfts",
     constructorArgs?: [],
@@ -532,6 +545,11 @@ declare module "@nomicfoundation/hardhat-viem/types" {
     deploymentTransaction: GetTransactionReturnType;
   }>;
 
+  export function getContractAt(
+    contractName: "HoldXNfts",
+    address: Address,
+    config?: GetContractAtConfig
+  ): Promise<GetContractReturnType<HoldXNfts$Type["abi"]>>;
   export function getContractAt(
     contractName: "contracts/activities/HoldXNftsActivity.sol:HoldXNfts",
     address: Address,

@@ -1235,11 +1235,24 @@ export interface NFTMintReward$Type {
 
 declare module "@nomicfoundation/hardhat-viem/types" {
   export function deployContract(
+    contractName: "NFTMintReward",
+    constructorArgs?: [],
+    config?: DeployContractConfig
+  ): Promise<GetContractReturnType<NFTMintReward$Type["abi"]>>;
+  export function deployContract(
     contractName: "contracts/rewards/NFTMintReward.sol:NFTMintReward",
     constructorArgs?: [],
     config?: DeployContractConfig
   ): Promise<GetContractReturnType<NFTMintReward$Type["abi"]>>;
 
+  export function sendDeploymentTransaction(
+    contractName: "NFTMintReward",
+    constructorArgs?: [],
+    config?: SendDeploymentTransactionConfig
+  ): Promise<{
+    contract: GetContractReturnType<NFTMintReward$Type["abi"]>;
+    deploymentTransaction: GetTransactionReturnType;
+  }>;
   export function sendDeploymentTransaction(
     contractName: "contracts/rewards/NFTMintReward.sol:NFTMintReward",
     constructorArgs?: [],
@@ -1249,6 +1262,11 @@ declare module "@nomicfoundation/hardhat-viem/types" {
     deploymentTransaction: GetTransactionReturnType;
   }>;
 
+  export function getContractAt(
+    contractName: "NFTMintReward",
+    address: Address,
+    config?: GetContractAtConfig
+  ): Promise<GetContractReturnType<NFTMintReward$Type["abi"]>>;
   export function getContractAt(
     contractName: "contracts/rewards/NFTMintReward.sol:NFTMintReward",
     address: Address,

@@ -819,11 +819,24 @@ export interface WhitelistSpots$Type {
 
 declare module "@nomicfoundation/hardhat-viem/types" {
   export function deployContract(
+    contractName: "WhitelistSpots",
+    constructorArgs?: [],
+    config?: DeployContractConfig
+  ): Promise<GetContractReturnType<WhitelistSpots$Type["abi"]>>;
+  export function deployContract(
     contractName: "contracts/rewards/WhitelistSpotsReward.sol:WhitelistSpots",
     constructorArgs?: [],
     config?: DeployContractConfig
   ): Promise<GetContractReturnType<WhitelistSpots$Type["abi"]>>;
 
+  export function sendDeploymentTransaction(
+    contractName: "WhitelistSpots",
+    constructorArgs?: [],
+    config?: SendDeploymentTransactionConfig
+  ): Promise<{
+    contract: GetContractReturnType<WhitelistSpots$Type["abi"]>;
+    deploymentTransaction: GetTransactionReturnType;
+  }>;
   export function sendDeploymentTransaction(
     contractName: "contracts/rewards/WhitelistSpotsReward.sol:WhitelistSpots",
     constructorArgs?: [],
@@ -833,6 +846,11 @@ declare module "@nomicfoundation/hardhat-viem/types" {
     deploymentTransaction: GetTransactionReturnType;
   }>;
 
+  export function getContractAt(
+    contractName: "WhitelistSpots",
+    address: Address,
+    config?: GetContractAtConfig
+  ): Promise<GetContractReturnType<WhitelistSpots$Type["abi"]>>;
   export function getContractAt(
     contractName: "contracts/rewards/WhitelistSpotsReward.sol:WhitelistSpots",
     address: Address,

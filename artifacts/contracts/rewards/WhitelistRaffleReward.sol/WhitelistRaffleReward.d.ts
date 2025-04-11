@@ -815,11 +815,24 @@ export interface WhitelistRaffleReward$Type {
 
 declare module "@nomicfoundation/hardhat-viem/types" {
   export function deployContract(
+    contractName: "WhitelistRaffleReward",
+    constructorArgs?: [],
+    config?: DeployContractConfig
+  ): Promise<GetContractReturnType<WhitelistRaffleReward$Type["abi"]>>;
+  export function deployContract(
     contractName: "contracts/rewards/WhitelistRaffleReward.sol:WhitelistRaffleReward",
     constructorArgs?: [],
     config?: DeployContractConfig
   ): Promise<GetContractReturnType<WhitelistRaffleReward$Type["abi"]>>;
 
+  export function sendDeploymentTransaction(
+    contractName: "WhitelistRaffleReward",
+    constructorArgs?: [],
+    config?: SendDeploymentTransactionConfig
+  ): Promise<{
+    contract: GetContractReturnType<WhitelistRaffleReward$Type["abi"]>;
+    deploymentTransaction: GetTransactionReturnType;
+  }>;
   export function sendDeploymentTransaction(
     contractName: "contracts/rewards/WhitelistRaffleReward.sol:WhitelistRaffleReward",
     constructorArgs?: [],
@@ -829,6 +842,11 @@ declare module "@nomicfoundation/hardhat-viem/types" {
     deploymentTransaction: GetTransactionReturnType;
   }>;
 
+  export function getContractAt(
+    contractName: "WhitelistRaffleReward",
+    address: Address,
+    config?: GetContractAtConfig
+  ): Promise<GetContractReturnType<WhitelistRaffleReward$Type["abi"]>>;
   export function getContractAt(
     contractName: "contracts/rewards/WhitelistRaffleReward.sol:WhitelistRaffleReward",
     address: Address,

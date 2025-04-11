@@ -1,14 +1,14 @@
 {
   "networkId": "33111",
   "tokenActivityInstance": {
-    "tim3cap": "0x824A471368c1BF414Cf46D74645C46509B2F94FB",
-    "activity": "0x90a173e12Bc8f30e7C7D4F20418fC1e51C0329Cf",
-    "reward": "0x4608cBD2068E81D6F29B6994f4b817CF0AF9C516",
+    "tim3cap": "0x5C0Dbfbed5749d1F9b6E28e1581f72Ed45e06A2A",
+    "activity": "0x9A9085a6D9F5B18291Ca2835b285a83f67417cF3",
+    "reward": "0x0CA296877546273AD4fb1607D41918Eae260DE73",
     "activityType": "BUY_X_TOKENS"
   },
   "brokerWallet": {
-    "address": "0xE72e6b425f2f791e2c41E7efa361920E2AcEcc50",
-    "privateKey": "0x4dc2c52285d88502112b69784b93c9365bf2d40855654cb036afc7602a986552"
+    "address": "0xe63Eaa5c1E320869B90336e4a391dE9c070ea9aC",
+    "privateKey": "0xf0f15cd96579f8e4d9ffc0087926b3304938d17e5724f19c924af278899b1026"
   },
-  "timestamp": "2025-04-11T03:54:30.616Z"
+  "timestamp": "2025-04-11T07:21:22.907Z"
 }

@@ -382,11 +382,24 @@ export interface TestToken$Type {
 
 declare module "@nomicfoundation/hardhat-viem/types" {
   export function deployContract(
+    contractName: "TestToken",
+    constructorArgs: [name: AbiParameterToPrimitiveType<{"name":"name","type":"string"}>, symbol: AbiParameterToPrimitiveType<{"name":"symbol","type":"string"}>, decimalsValue: AbiParameterToPrimitiveType<{"name":"decimalsValue","type":"uint8"}>],
+    config?: DeployContractConfig
+  ): Promise<GetContractReturnType<TestToken$Type["abi"]>>;
+  export function deployContract(
     contractName: "contracts/test/TestToken.sol:TestToken",
     constructorArgs: [name: AbiParameterToPrimitiveType<{"name":"name","type":"string"}>, symbol: AbiParameterToPrimitiveType<{"name":"symbol","type":"string"}>, decimalsValue: AbiParameterToPrimitiveType<{"name":"decimalsValue","type":"uint8"}>],
     config?: DeployContractConfig
   ): Promise<GetContractReturnType<TestToken$Type["abi"]>>;
 
+  export function sendDeploymentTransaction(
+    contractName: "TestToken",
+    constructorArgs: [name: AbiParameterToPrimitiveType<{"name":"name","type":"string"}>, symbol: AbiParameterToPrimitiveType<{"name":"symbol","type":"string"}>, decimalsValue: AbiParameterToPrimitiveType<{"name":"decimalsValue","type":"uint8"}>],
+    config?: SendDeploymentTransactionConfig
+  ): Promise<{
+    contract: GetContractReturnType<TestToken$Type["abi"]>;
+    deploymentTransaction: GetTransactionReturnType;
+  }>;
   export function sendDeploymentTransaction(
     contractName: "contracts/test/TestToken.sol:TestToken",
     constructorArgs: [name: AbiParameterToPrimitiveType<{"name":"name","type":"string"}>, symbol: AbiParameterToPrimitiveType<{"name":"symbol","type":"string"}>, decimalsValue: AbiParameterToPrimitiveType<{"name":"decimalsValue","type":"uint8"}>],
@@ -396,6 +409,11 @@ declare module "@nomicfoundation/hardhat-viem/types" {
     deploymentTransaction: GetTransactionReturnType;
   }>;
 
+  export function getContractAt(
+    contractName: "TestToken",
+    address: Address,
+    config?: GetContractAtConfig
+  ): Promise<GetContractReturnType<TestToken$Type["abi"]>>;
   export function getContractAt(
     contractName: "contracts/test/TestToken.sol:TestToken",
     address: Address,

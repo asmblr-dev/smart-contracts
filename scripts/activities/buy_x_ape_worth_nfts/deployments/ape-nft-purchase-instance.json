@@ -1,0 +1,14 @@
+{
+  "networkId": "33111",
+  "apeNftPurchaseInstance": {
+    "tim3cap": "0x858Ea0d3A781DfF91FDbC279C39f2105083360E3",
+    "activity": "0xd20bcC24cb7E7Bf6b8f7Bc359C8612f904994035",
+    "reward": "0x178d74A9Ed320bf32331399593F000Cdab2FFcE2",
+    "activityType": "BUY_X_APECOIN_WORTH_OF_NFTS"
+  },
+  "brokerWallet": {
+    "address": "0x8629F90Eb1b6483FedD5C17f51DA44Ecf2452704",
+    "privateKey": "0x20fbf96952d5013a5419db64045449750878dcebc33420c6ec47308540267b32"
+  },
+  "timestamp": "2025-04-11T07:55:23.524Z"
+}
